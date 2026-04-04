@@ -54,3 +54,4 @@ oxidized-registry = { path = "../registry" }
 
 [patch."https://github.com/oxidized-mc/types.git"]
 oxidized-types = { path = "../types" }
+
