@@ -1,0 +1,5 @@
+# Clippy configuration file
+# See: https://doc.rust-lang.org/clippy/configuration.html
+
+msrv = "1.85"
+too-many-arguments-threshold = 8

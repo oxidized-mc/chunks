@@ -12,9 +12,14 @@ keywords     = ["minecraft", "oxidized-mc"]
 categories   = ["game-development"]
 
 [dependencies]
+oxidized-types    = { version = "0.1" }
+oxidized-registry = { version = "0.1" }
+thiserror         = "2"
+ahash             = "0.8"
 
 [dev-dependencies]
 proptest = "1"
+insta    = "1"
 
 [lints.rust]
 missing_docs   = "warn"
@@ -43,3 +48,7 @@ must_use_candidate         = "allow"
 cast_possible_truncation   = "allow"
 cast_sign_loss             = "allow"
 cast_possible_wrap         = "allow"
+
+[patch.crates-io]
+oxidized-registry = { path = "../registry" }
+oxidized-types    = { path = "../types" }
