@@ -12,8 +12,8 @@ keywords     = ["minecraft", "oxidized-mc"]
 categories   = ["game-development"]
 
 [dependencies]
-oxidized-types    = { version = "0.1" }
-oxidized-registry = { version = "0.1" }
+oxidized-types       = { git = "https://github.com/oxidized-mc/types.git" }
+oxidized-registry    = { git = "https://github.com/oxidized-mc/registry.git" }
 thiserror         = "2"
 ahash             = "0.8"
 
@@ -49,6 +49,8 @@ cast_possible_truncation   = "allow"
 cast_sign_loss             = "allow"
 cast_possible_wrap         = "allow"
 
-[patch.crates-io]
+[patch."https://github.com/oxidized-mc/registry.git"]
 oxidized-registry = { path = "../registry" }
-oxidized-types    = { path = "../types" }
+
+[patch."https://github.com/oxidized-mc/types.git"]
+oxidized-types = { path = "../types" }
